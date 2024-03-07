@@ -10,11 +10,11 @@ The goal of this assignment is to implement an application or script that will r
 store movie information.
 The application must retrieve a list of the movies currently in theaters in Greece, along with
 at least the following attributes:
-● Title
-● Description
-● Original Title
-● List of Directors
-● The IMDB link to the profile of each of the directors
+ &nbsp; ● Title
+ &nbsp; ● Description
+ &nbsp; ● Original Title
+ &nbsp; ● List of Directors
+ &nbsp; ● The IMDB link to the profile of each of the directors
 All the above information will be stored in a relational database. The data in the database will
 be updated each time the process runs.
 You are free to include any additional features / optimizations that you may find relevant or
