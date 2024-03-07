@@ -1,0 +1,77 @@
+.options{
+    height: 5vh;
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+.searcher{
+    float: left;
+    width: 40%;
+    background-color: black;
+    border-style:solid;
+    border-color: hsla(131, 94%, 48%, 0.844);
+}
+.Welcomepage{
+    float: left;
+    width: 33%;
+}
+#inputSearch{
+    color: rgb(210, 210, 210);
+    background-color: black;
+    font-size: 1rem;
+    height: 1.8rem;
+    border: none;
+    outline: none;       
+}
+
+.BookMarks{
+    width: 37%;
+    height: 100%;
+    float: left;
+    margin-bottom: 10%;
+}
+.LogOut{
+    width:22.1%;
+    height: 100%;
+    float: left;
+}
+.bookmarks::before{
+    color: rgb(210, 210, 210);
+    font-size: 1.9rem;
+    content: "MyBookMarks ";
+}
+.logout::before{
+    color: rgb(210, 210, 210);
+    font-size: 1.9rem;
+    content: "LogOut ";/* javascript */
+}
+.welcomepage::before{
+    color: rgb(210, 210, 210);
+    font-size: 1.9rem;
+    content: "Welcome ";/* javascript */
+}
+.BookMarks:hover, .Welcomepage:hover, .LogOut:hover{
+    background-color: rgba(251, 226, 0, 0.59);
+    color: black;
+}
+.BookMark-Component{
+    width:33%;
+}
+.BookMark-Checked{
+    background-color: rgba(251, 226, 0, 0.59);
+}
+.bookmark-checked::before{
+    color: black;
+}
+.external-div2{
+    /* opacity: 0.3; */
+     /*pointer-events: none;*/
+     color:white;
+     overflow:hidden;
+     background-color: hsla(0, 0%, 100%, 0.1);
+     margin-left: 15%;
+     margin-right: 15%;
+     margin-top: 10vh;
+     width: 70%;
+     margin-bottom: 10vh;
+     border-color:hsla(109, 87%, 49%, 0.703);
+     border-style: solid;
+ }

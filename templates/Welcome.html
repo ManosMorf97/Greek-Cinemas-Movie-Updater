@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/decoration.css') }}>
+        <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='css/main-decoration.css') }}>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Welcome</title>
+        <div class="movies">
+            {% for movie in movies %}
+            <div class="external-div">
+                <h1>Title: {{movie.title}} </h1>
+                <h1>Original Title: {{movie.original_title}} </h1>
+                <h4>Description: {{movie.overview}} </h4>
+                <br/>
+                {%for director in movie.directors %}
+                <h2>Director: {{director.name}} </h2>
+                {% endfor %}
+            </div>
+            {% endfor %}
+        </div>
+    </body>
+</html>
