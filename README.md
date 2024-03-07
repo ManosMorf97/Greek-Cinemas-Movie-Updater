@@ -48,4 +48,19 @@ make direct API requests.
   - &nbsp; director_id (PK)
   - &nbsp; name
   - &nbsp; movie_id (PK) (FK) Movie(movie_id)
+ 
+ ## Application logic
+ 1) There are 2 Sets: TMDB and RelationalDB.
+ 2) An API request is sent to TMDB with region=gr to find the movies that are currently in Theaters in Greece.
+ 3) Then the movies that are only in the RelationalDB are stored to be deleted, and the movies that are only in the TMDB are stored to be kept.
+ 4) The movies to be deleted are deleted from Relational DB, and the movies to be kept are inserted in the RelationalDB.
+ 5) Afterwards, on the recently inserted movies we made requests about movie details keeping the movie_id, to acquire details about directors.
+ 6) To present the updated info we join the tables Movie and Director and we order the joined table by movie_id.
+
+## Benefits on Implementation
+1) Instead of reinventing the wheel creating algorithms from scratch to find the intersection,<br>union, etc the data-type Set is used to find the above.
+2) To delete the old records the database is queried using the keyword IN instead of many queries with where.
+3) The joined table is sorted via movie_Id attribute, in order to find the directors of each movie faster,<br>and represent them with the movie info, instead to search the directors for every movie.
+4) Http-request for directors are made only for movies who have been recently inserted on the Relational DB.
+5) The table Movie is cascaded so if a movie is deleted, the rows of director having the id of the<br>deleted movie will be deleted.
 
