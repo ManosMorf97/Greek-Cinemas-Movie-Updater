@@ -35,7 +35,7 @@ make direct API requests.
 
 ## app runing
 1) python -m flask --app MovieUpdate run
-2) open localhost:5000
+2) open localhost:5000 on browser.
 
 
 ## Relational Tables
