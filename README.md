@@ -17,12 +17,12 @@
 
 ## Relational Tables
 * Movie
- * movie_id (PK)
- * title
- * original_title
- * description
+ - movie_id (PK)
+ - title
+ - original_title
+ - description
 *Director
- * director_id (PK)
- * name
- * movie_id (PK) (FK) Movie(movie_id)
+ - director_id (PK)
+ - name
+ - movie_id (PK) (FK) Movie(movie_id)
 
