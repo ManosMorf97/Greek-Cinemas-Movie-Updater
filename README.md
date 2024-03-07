@@ -21,7 +21,7 @@
   &nbsp - title
   &nbsp - original_title
   &nbsp - description
-*Director
+* Director
   &nbsp - director_id (PK)
   &nbsp - name
   &nbsp - movie_id (PK) (FK) Movie(movie_id)
