@@ -1,9 +1,9 @@
 # GreekCinemasMoviesUpdater
 
 ## tools
-Python
-flask
-flask-sqlalchemy
-HTML
-CSS
+* Python
+* flask
+* flask-sqlalchemy
+* HTML
+* CSS
  
