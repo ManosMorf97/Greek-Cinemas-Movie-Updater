@@ -17,7 +17,7 @@
 
 ## Relational Tables
 * Movie
-  &nbsp; - movie_id (PK)
+  &nbsp; * movie_id (PK)
   &nbsp;- title
   &nbsp; - original_title
   &nbsp; - description
