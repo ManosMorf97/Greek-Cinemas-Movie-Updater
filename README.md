@@ -25,6 +25,7 @@ make direct API requests.
 
 ## tools
 * Python
+* mysql-connector-python
 * flask
 * flask-sqlalchemy
 * HTML
