@@ -32,7 +32,7 @@ make direct API requests.
 * CSS
 
 ## instalation
-* python -m pip install -r requrements.txt
+* python -m pip install -r requirements.txt
 
 ## app runing
 1) python -m flask --app MovieUpdate run
