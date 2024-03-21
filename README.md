@@ -1,4 +1,4 @@
-# GreekCinemasMoviesUpdater
+# Greek-Cinemas-Movie-Updater
 
 ## This is a task given by Workable Company to evaluate me for a job position as Junior Software Operations Engineer
 
